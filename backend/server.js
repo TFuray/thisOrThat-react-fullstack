@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: false }))
 
 // Routes
 app.use("/api/users", require("./routes/user"))
+app.use("/api/posts", require("./routes/posts"))
 
 // Deploy frontend
 if (process.env.NODE_ENV === "production") {
