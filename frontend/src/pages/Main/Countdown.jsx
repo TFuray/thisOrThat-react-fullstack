@@ -45,21 +45,21 @@ const Countdown = () => {
   return (
     <div className="flex flex-col items-center mx-5 md:flex-row drop-shadow-xl">
       <div className="w-full px-5 mb-5 text-center md:mb-0 md:text-left">
-        <h6 className="font-semibold text-indigo-800 uppercase drop-shadow-xl text-md md:text-base dark:text-gray-100 ">
-          Next Contest Starts
+        <h6 className="font-bold text-black uppercase mb-2 drop-shadow-xl text-2xl">
+          Next Contest
         </h6>
-        <h3 className="text-2xl font-bold text-white font-heading md:text-4xl">
+        <h3 className="text-5xl font-bold text-white font-heading mb-2">
           Sunday
         </h3>
-        <h3 className="text-lg font-bold leading-tight text-white font-heading md:text-xl">
-          @ 10:00 AM
+        <h3 className="text-lg font-bold leading-tight text-black font-heading md:text-xl">
+          Think You Have What It Takes
         </h3>
         <div className="w-full mt-4 md:w-44">
           <button
             type="button"
-            className="w-full px-4 py-2 text-base font-semibold text-center text-indigo-500 transition duration-200 ease-in bg-white rounded-lg shadow-md hover:bg-gray-100 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
+            className="w-full px-4 py-2 text-base font-semibold text-center text-gr transition duration-200 ease-in bg-white rounded-lg shadow-md hover:bg-gray-100 focus:ring-indigo-500 focus:ring-offset-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 "
           >
-            Early bird
+           View last weeks winner
           </button>
         </div>
       </div>
