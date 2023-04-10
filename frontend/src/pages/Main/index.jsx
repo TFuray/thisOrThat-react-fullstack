@@ -1,8 +1,12 @@
 import Countdown from "./Countdown"
+import Hero from "./Hero"
+
 const index = () => {
   return (
     <>
-    <Countdown />
+      <div>
+        <Hero />
+      </div>
     </>
   )
 }

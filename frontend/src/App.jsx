@@ -1,10 +1,15 @@
-import Main from './pages/Main/index'
-function App() {
+import Main from "./pages/Main/index"
+import Navbar from "./components/Navbar"
 
+
+function App() {
   return (
-    <div className="App">
-      <Main />
-    </div>
+    <>
+      <Navbar />
+      <div >
+        <Main />
+      </div>
+    </>
   )
 }
 
