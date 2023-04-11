@@ -3,7 +3,7 @@ import Countdown from "./Countdown"
 const Hero = () => {
   return (
     <section>
-      <div className="dark:bg-violet-400">
+      <div className="bg-violet-400">
         <div className="container flex flex-col items-center px-4 py-6 pb-6 mx-auto text-center dark:text-gray-900">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl dark:text-gray-900">
             <div>
