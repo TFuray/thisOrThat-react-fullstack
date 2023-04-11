@@ -1,7 +1,9 @@
+import LoginForm from "./LoginForm"
+
 const index = () => {
   return (
     <>
-    
+      <LoginForm />
     </>
   )
 }

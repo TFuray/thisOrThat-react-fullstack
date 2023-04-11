@@ -2,13 +2,9 @@ import { useState } from "react"
 import Hero from "./Hero"
 
 const index = () => {
-
-
-
   return (
     <>
-      <div><Hero /></div>
-
+      <Hero />
     </>
   )
 }
