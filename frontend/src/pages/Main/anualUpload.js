@@ -12,11 +12,6 @@ export const getSundays = (year) => {
 }
 // console.log(getSundays(2023))
 
-export const getNextSunday = () => {
-  date.setDate(date.getDate() - )
-  return sunday
-
-}
 
 
 console.log(getNextSunday())
