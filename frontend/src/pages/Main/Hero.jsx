@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Countdown from "./Countdown"
 
 const Hero = () => {
@@ -17,7 +18,9 @@ const Hero = () => {
             </p>
           </div>
           <div className="flex flex-wrap justify-center mr-3">
+            <Link to='/login'>
             <button className="btn btn-primary text-lg ">Login</button>
+            </Link>
             <button className="btn btn-secondary text-lg ml-3">
               Create Account
             </button>
