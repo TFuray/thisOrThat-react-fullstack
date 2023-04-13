@@ -1,11 +1,26 @@
 import { Link } from "react-router-dom"
+import {useState, useEffect} from 'react'
+import {useSelector, useDispatch} from 'react-redux'
+import { useNavigate } from "react-router-dom"
+import { login, reset } from '../../features/auth/authSlice'
+import Spinner from '../../components/Spinner/index'
 
 const LoginForm = () => {
+  const [formData, setFormData] = useState({
+    email: '',
+    password: ''
+  })
+
+  const { email, password } = formData
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
+
+
   return (
-    <section className="bg-base-300">
+    <section className="bg-base">
       <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div className="w-full bg-white border-solid rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
-          <div className="bg-primary-content p-6 space-y-4 md:space-y-6 sm:p-8">
+        <div className="w-full bg-secondary rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
+          <div className="bg-accent p-6 space-y-4 md:space-y-6 sm:p-8">
             <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
               Sign in to your account
             </h1>
