@@ -1,4 +1,4 @@
-const asyncHanlder = require("express-async-handler")
+const asyncHandler = require("express-async-handler")
 const cloudinary = require("../middleware/cloudinary")
 
 const User = require("../models/User")
@@ -6,7 +6,7 @@ const Post = require("../models/Post")
 
 // @desc..... upload pic to cloudinary
 // @route.... POST /api/posts
-const uploadImage = asyncHanlder(async (req, res) => {
+const uploadImage = asyncHandler(async (req, res) => {
   const { caption } = req.body
   try {
     // upload image to cloudinary
@@ -14,12 +14,12 @@ const uploadImage = asyncHanlder(async (req, res) => {
 
     const post = await Post.create({
       image: result.secure_url,
-      cloudinaryId: result.puplic_id,
+      cloudinaryId: result.public_id,
       caption,
       likes: 0,
       user: req.user.id,
     })
-    console.log("Image succesfully uploaded")
+    console.log("Image successfully uploaded")
     res.status(200).json(post)
 
   } catch (error) {

@@ -14,12 +14,12 @@ const Hero = () => {
           <div className="drop-shadow-2xl text-xl ">
             <p className="mt-6 mb-8 sm:mb-12 xl:max-w-3xl dark:text-secondary-content">
               Every Sunday you can upload an original image and <br />
-               have a chance at being voted Number 1
+              have a chance at being voted Number 1
             </p>
           </div>
           <div className="flex flex-wrap justify-center mr-3">
-            <Link to='/login'>
-            <button className="btn btn-primary text-lg ">Login</button>
+            <Link to="/login">
+              <button className="btn btn-primary text-lg ">Login</button>
             </Link>
             <button className="btn btn-secondary text-lg ml-3">
               Create Account
