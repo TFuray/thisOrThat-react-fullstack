@@ -6,6 +6,6 @@ const {
 
 const { protect } = require('../middleware/auth')
 
-router.route('/').post(protect, uploadImage)
+router.route('/createPost').post(protect, uploadImage)
 
 module.exports = router

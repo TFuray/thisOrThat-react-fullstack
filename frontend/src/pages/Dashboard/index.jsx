@@ -2,6 +2,7 @@ import VoteBox from "./VoteBox"
 import { useEffect, useState} from 'react'
 import { useNavigate } from "react-router-dom"
 import { useSelector, useDispatch } from "react-redux"
+import CloudinaryUploadWidget from "./CloudinaryUploadWidget"
 import Spinner from "../../components/Spinner"
 
 
@@ -11,11 +12,13 @@ const index = () => {
   const dispatch = useDispatch()
 
   const {user} = useSelector ((state) => state.auth)
-  
+
 
   return (
-    <section className="bg-slate-900">
+    <section className="">
+      <p>test</p>
       <VoteBox />
+      <CloudinaryUploadWidget />
     </section>
   )
 }

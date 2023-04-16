@@ -11,7 +11,7 @@ const uploadImage = asyncHandler(async (req, res) => {
   try {
     // upload image to cloudinary
     const result = await cloudinary.uploader.upload(req.file.path)
-
+    console.log(result)
     const post = await Post.create({
       image: result.secure_url,
       cloudinaryId: result.public_id,
