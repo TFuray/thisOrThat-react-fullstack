@@ -45,17 +45,17 @@ const Countdown = () => {
   return (
     <div className="flex flex-col items-center mx-5 md:flex-row drop-shadow-xl">
       <div className="w-full px-5 mb-5 text-center md:mb-0 md:text-left">
-        <h6 className="font-bold text-black uppercase mb-2 drop-shadow-xl text-2xl">
+        <h6 className="font-bold text-secondary-content  uppercase mb-2 drop-shadow-xl text-2xl">
           Next Contest
         </h6>
-        <h3 className="text-5xl font-bold text-white font-heading mb-2">
+        <h3 className="text-5xl font-bold text-neutral-content font-heading mb-2">
           Sunday
         </h3>
         <div className="w-full mt-4 md:w-44">
         </div>
       </div>
       <div className="w-full px-5 md:w-auto">
-        <div className="flex justify-center text-center text-white">
+        <div className="flex justify-center text-center text-secondary-content">
           <div className="w-20 py-3 mx-2 border rounded-lg md:w-24 border-light-300 bg-light-100 md:py-4">
             <div className="text-2xl font-semibold md:text-3xl">
               <span>0</span>
@@ -87,7 +87,7 @@ const Countdown = () => {
         </div>
       </div>
     </div>
-   
+
   )
 }
 export default Countdown
